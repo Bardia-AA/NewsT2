@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{0A16268C-6B2E-42F1-88CE-07F044279CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML", "HTML", "{B891053D-640D-4CAC-85A4-43BA2F561217}"
+	ProjectSection(SolutionItems) = preProject
+		MainP.html = MainP.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{1C62E027-350E-4B6F-85C7-35B7956CB102}"
+	ProjectSection(SolutionItems) = preProject
+		News.css = News.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavaScript", "JavaScript", "{97A03A20-5436-4685-BA8E-69D0AB811877}"
+	ProjectSection(SolutionItems) = preProject
+		Searching.js = Searching.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B891053D-640D-4CAC-85A4-43BA2F561217} = {0A16268C-6B2E-42F1-88CE-07F044279CE1}
+		{1C62E027-350E-4B6F-85C7-35B7956CB102} = {0A16268C-6B2E-42F1-88CE-07F044279CE1}
+		{97A03A20-5436-4685-BA8E-69D0AB811877} = {0A16268C-6B2E-42F1-88CE-07F044279CE1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FA19ED8-A840-49BE-AC4A-CBA2A719ED25}
+	EndGlobalSection
+EndGlobal

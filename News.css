@@ -1,0 +1,212 @@
+/*Font*/
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/YEKAN_PLUS.ttf);
+}
+
+/*All*/
+* {
+    font-family: myFont;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*Menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(12, 12, 12);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    box-sizing: border-box;
+    color: rgb(230, 230, 230);
+    line-height: 24.3833px;
+    font-size: 15px;
+    display: block;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    z-index: 1 
+}
+li {
+    float: right;
+}
+    /*Menu(Links)*/
+    li a {
+        display: block;
+        color: rgb(230, 230, 230);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+        li a:hover {
+            color: rgb(12, 12, 12);
+            background: rgb(230, 230, 230);
+        }
+    /*Menu(SearchSRCH)*/
+    li form.srch input[type=search] {
+        float: right;
+        padding: 10px;
+        border: 1px inset azure;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 15px;
+        text-align: right;
+        width: 72%;
+        background: rgb(12, 12, 12);
+    }
+    /*Menu(SearchBTN)*/
+    li form.srch button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        margin-top: 8px;
+        background: rgb(12, 12, 12);
+        color: rgb(230, 230, 230);
+        font-size: 15px;
+        border: 1px inset azure;
+        border-right: none;
+        cursor: pointer;
+    }
+        li form.srch button:hover {
+            color: rgb(12, 12, 12);
+            background: rgb(230, 230, 230);
+        }
+/* Clear floats */
+form.srch::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    /*Menu(Size)*/
+@media screen and (max-width: 600px) {
+    ul a, ul input[type=text] {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+       ul input[type=text] {
+        border: 1px inset azure;
+    }
+}
+
+/*Body*/
+body {
+    text-align: center;
+    margin: 0;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(254, 254, 254);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    box-sizing: border-box;
+    color: rgb(38, 38, 38);
+    display: block;
+    font-size: 15px;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: margin;
+    transition-timing-function: ease-out
+}
+
+/*Links*/
+/*a:link {
+    color: darkgreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
+
+a{
+    color:rgb(38,38,38);
+}
+#ac {
+    color: rgb(254, 254, 254);
+}
+    #ac:hover {
+        color: #D40000;
+    }
+a:link, a:visited {
+    border: 1px hidden;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+    a:hover, a:active {
+        color: #D40000;
+    }
+
+/*Headings*/
+h1 {
+    background-color: #D40000;
+    color: rgb(254, 254, 254);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+h2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h4 {
+    color: rgb(38,38,38);
+    text-shadow: #d9d9d9 1px 0 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/*Image*/
+img {
+    float: right;
+}
+#imgRPM {
+    border-radius: 35%;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+/*Paragraph*/
+p {
+    text-shadow: #d9d9d9 1px 0 10px;
+}
+
+/*Ads*/
+#ad {
+    margin-right:1300px;
+    margin-top:-30%;
+}
