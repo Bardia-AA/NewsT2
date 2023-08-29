@@ -96,7 +96,7 @@ form.srch::after {
         margin: 0;
         padding: 14px;
     }
-       ul input[type=text] {
+     ul input[type=text] {
         border: 1px inset azure;
     }
 }
