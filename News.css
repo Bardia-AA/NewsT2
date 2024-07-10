@@ -1,212 +1,274 @@
-/*Font*/
+/* created by Bardia-AA ;D */
+/* Colors */
+:root {
+    --primary: #126192;
+    --secondary: #0b3c5a;
+    --light: #fff;
+    --dark: #333;
+    --muted: #f8f9fa;
+}
+
+/* body */
+body {
+    animation: fadeIn 0.5s ease-in-out;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-link,
+.btn,
+.form-control {
+    transition: all 0.2s ease;
+}
+
+/* Font */
 @font-face {
     font-family: myFont;
     src: url(Fonts/YEKAN_PLUS.ttf);
 }
 
-/*All*/
+/* Typography */
 * {
     font-family: myFont;
     box-sizing: border-box;
     outline: none;
 }
 
-/*Menu*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgb(12, 12, 12);
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    box-sizing: border-box;
-    color: rgb(230, 230, 230);
-    line-height: 24.3833px;
-    font-size: 15px;
-    display: block;
-    opacity: 1;
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition-property: opacity;
-    transition-timing-function: ease;
-    z-index: 1 
-}
-li {
-    float: right;
-}
-    /*Menu(Links)*/
-    li a {
-        display: block;
-        color: rgb(230, 230, 230);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 15px;
-    }
-        li a:hover {
-            color: rgb(12, 12, 12);
-            background: rgb(230, 230, 230);
-        }
-    /*Menu(SearchSRCH)*/
-    li form.srch input[type=search] {
-        float: right;
-        padding: 10px;
-        border: 1px inset azure;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 15px;
-        text-align: right;
-        width: 72%;
-        background: rgb(12, 12, 12);
-    }
-    /*Menu(SearchBTN)*/
-    li form.srch button {
-        float: left;
-        width: 20%;
-        padding: 10px;
-        margin-top: 8px;
-        background: rgb(12, 12, 12);
-        color: rgb(230, 230, 230);
-        font-size: 15px;
-        border: 1px inset azure;
-        border-right: none;
-        cursor: pointer;
-    }
-        li form.srch button:hover {
-            color: rgb(12, 12, 12);
-            background: rgb(230, 230, 230);
-        }
-/* Clear floats */
-form.srch::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-    /*Menu(Size)*/
-@media screen and (max-width: 600px) {
-    ul a, ul input[type=text] {
-        float: none;
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-     ul input[type=text] {
-        border: 1px inset azure;
-    }
+h1,
+h2,
+h3 {
+    font-weight: bold;
 }
 
-/*Body*/
-body {
-    text-align: center;
-    margin: 0;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgb(254, 254, 254);
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    box-sizing: border-box;
-    color: rgb(38, 38, 38);
-    display: block;
-    font-size: 15px;
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-property: margin;
-    transition-timing-function: ease-out
-}
-
-/*Links*/
-/*a:link {
-    color: darkgreen;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
-    color: rebeccapurple;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: brown;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-}*/
-
-a{
-    color:rgb(38,38,38);
-}
-#ac {
-    color: rgb(254, 254, 254);
-}
-    #ac:hover {
-        color: #D40000;
-    }
-a:link, a:visited {
-    border: 1px hidden;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-    a:hover, a:active {
-        color: #D40000;
-    }
-
-/*Headings*/
-h1 {
-    background-color: #D40000;
-    color: rgb(254, 254, 254);
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
+/* Headlines */
 h2 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-h4 {
-    color: rgb(38,38,38);
-    text-shadow: #d9d9d9 1px 0 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
-/*Image*/
-img {
-    float: right;
-}
-#imgRPM {
-    border-radius: 35%;
-    margin-right: 10px;
-    margin-top: 1px;
+h3 {
+    font-size: 1.25rem;
 }
 
-/*Paragraph*/
+/* Text */
 p {
-    text-shadow: #d9d9d9 1px 0 10px;
+    font-size: 0.9rem;
 }
 
-/*Ads*/
-#ad {
-    margin-right:1300px;
-    margin-top:-30%;
+/* Margins */
+.card,
+.card-body {
+    margin-bottom: 1.5rem;
 }
+
+/* Header */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--muted);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.nav-link {
+    color: var(--muted);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Headlines */
+h2,
+h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--muted);
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Ads .card-body{
+    flex: none;
+    display: block;
+  }
+
+/* Lead story */
+.lead-img {
+    transition: transform 0.3s ease;
+}
+
+.lead-img:hover {
+    transform: scale(1.05);
+}
+
+/* Card hover effect */
+.card {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.card-title {
+    transition: color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.card-title:hover {
+    color: var(--secondary);
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--muted);
+    background: linear-gradient(to right, #1c1d27, #525274);
+    color: var(--light);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* Search Form */
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #126192;
+    box-shadow: 0 0 0 2px #cce6f8;
+  }
+
+.btn-search {
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.btn-search:hover {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .lead-img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #search-form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    
+      .form-control {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+      
+      .btn-search {
+        padding: 0.5rem;
+        width: 100%;
+      }
+}
+/* created by Bardia-AA ;D */
