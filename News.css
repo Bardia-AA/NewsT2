@@ -90,6 +90,16 @@ p {
     color: var(--primary);
 }
 
+.text-center a {
+    color: var(--muted);
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.text-center a:hover {
+    color: var(--primary);
+}
+
+
 /* Headlines */
 h2,
 h3 {
