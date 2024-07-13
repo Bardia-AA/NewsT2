@@ -67,12 +67,6 @@ You can customize the website by modifying the HTML, CSS, and JavaScript files a
 - **CSS**: Modify styles in the `News.css` file to change the appearance of the website.
 - **JavaScript**: Update the `Searching.js` file to change the search functionality or add new interactive features.
 
-## Credits
-
-- **Developer**: [Bardia-AA](https://github.com/Bardia-AA)
-- **Icons**: [Font Awesome](https://fontawesome.com)
-- **Framework**: [Bootstrap](https://getbootstrap.com)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
